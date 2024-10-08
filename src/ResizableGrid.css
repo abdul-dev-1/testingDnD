@@ -1,0 +1,33 @@
+.resizable-item {
+    position: relative;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.resizable-content {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #e9ecef;
+}
+
+.resizer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    cursor: nwse-resize;
+}
+
+.dragging {
+    opacity: 0.5;
+    /* Visual feedback while dragging */
+}
